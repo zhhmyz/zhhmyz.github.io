@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Mengyue&#39;s Hugo Site</title>
+    <title>Mengyue</title>
     <link>http://zhhmyz.github.io/</link>
-    <description>Recent content on Mengyue&#39;s Hugo Site</description>
+    <description>Recent content on Mengyue</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Tue, 18 Aug 2020 19:17:05 -0400</lastBuildDate>
     
 	<atom:link href="http://zhhmyz.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -17,6 +18,19 @@
       
       <guid>http://zhhmyz.github.io/about/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>How I Made this Hugo Site</title>
+      <link>http://zhhmyz.github.io/posts/my-first-post/</link>
+      <pubDate>Tue, 18 Aug 2020 19:17:05 -0400</pubDate>
+      
+      <guid>http://zhhmyz.github.io/posts/my-first-post/</guid>
+      <description>Bascially, I follow the tutorial of Hugo (Quick Start) to set up this website. The website of tutoials I read are https://gohugo.io/hosting-and-deployment/hosting-on-github/ , https://gohugo.io/getting-started/quick-start/
+Step 1: Install Hugo.
+Step 2: Create the new hugo site using the command line.
+Step 3: Download and install a theme from Github or the official website of Hugo.
+Step 4: You can start the Hugo server, and add your contents in the file of the /new_site/content/posts.</description>
     </item>
     
   </channel>
