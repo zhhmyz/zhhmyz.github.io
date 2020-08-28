@@ -27,10 +27,10 @@
       
       <guid>http://zhhmyz.github.io/posts/my-first-post/</guid>
       <description>Bascially, I follow the tutorial of Hugo (Quick Start) to set up this website. The website of tutoials I read are https://gohugo.io/hosting-and-deployment/hosting-on-github/ , https://gohugo.io/getting-started/quick-start/
-Step 1: Install Hugo.
-Step 2: Create the new hugo site using the command line.
-Step 3: Download and install a theme from Github or the official website of Hugo.
-Step 4: You can start the Hugo server, and add your contents in the file of the /new_site/content/posts.</description>
+Step 1: Install the Hugo.
+brew install hugo Step 2: Create a new hugo site.
+hugo new site hugo Step 3: Download and install a theme from Github or the official website of Hugo. I chose the theme &amp;ldquo;ananke&amp;rdquo;
+Step 4: You can start the Hugo server, and add your contents in the file of the /content/posts.</description>
     </item>
     
   </channel>
