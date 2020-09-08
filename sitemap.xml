@@ -3,55 +3,55 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://zhhmyz.github.io/project/assignment2/</loc>
+    <loc>https://example.com/project/assignment2/</loc>
     <lastmod>2020-09-06T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://zhhmyz.github.io/</loc>
+    <loc>https://example.com/</loc>
     <lastmod>2020-09-06T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://zhhmyz.github.io/project/</loc>
+    <loc>https://example.com/project/</loc>
     <lastmod>2020-09-06T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://zhhmyz.github.io/about/</loc>
+    <loc>https://example.com/about/</loc>
     <lastmod>2020-08-18T19:48:40-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://zhhmyz.github.io/posts/my-first-post/</loc>
+    <loc>https://example.com/posts/my-first-post/</loc>
     <lastmod>2020-08-18T19:17:05-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://zhhmyz.github.io/posts/</loc>
+    <loc>https://example.com/posts/</loc>
     <lastmod>2020-08-18T19:17:05-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://zhhmyz.github.io/categories/</loc>
+    <loc>https://example.com/categories/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://zhhmyz.github.io/tags/</loc>
+    <loc>https://example.com/tags/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
