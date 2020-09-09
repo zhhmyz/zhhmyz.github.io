@@ -21,7 +21,7 @@
 Problem 13: Large Sum Work out the first ten digits of the sum of the following one-hundread 50-digit numbers.
   Solved by 225065
   Link: https://projecteuler.net/problem=13
-  nums = &amp;quot;&amp;quot;&amp;quot; one-hundred 50-digit numbers &amp;quot;&amp;quot;&amp;quot;&amp;quot; def large_sum(a): &amp;quot;&amp;quot;&amp;quot;Sum 50-digit numbers and return the first ten digits Parameters ---------- a : string A one-hundred numbers string that is separated by &#39;\n&#39; Returns ------- int First ten digits of the calculation &amp;quot;&amp;quot;&amp;quot; a = a.</description>
+  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24  nums = &amp;#34;&amp;#34;&amp;#34; one-hundred 50-digit numbers &amp;#34;&amp;#34;&amp;#34;&amp;#34; def large_sum(a): &amp;#34;&amp;#34;&amp;#34;Sum 50-digit numbers and return the first ten digits Parameters ---------- a : string A one-hundred numbers string that is separated by &amp;#39;\n&amp;#39; Returns ------- int First ten digits of the calculation &amp;#34;&amp;#34;&amp;#34; a = a.</description>
     </item>
     
     <item>
@@ -41,9 +41,8 @@ Problem 13: Large Sum Work out the first ten digits of the sum of the following 
       <guid>https://zhhmyz.github.io/posts/my-first-post/</guid>
       <description>Bascially, I follow the tutorial of Hugo (Quick Start) to set up this website. The website of tutoials I read are https://gohugo.io/hosting-and-deployment/hosting-on-github/ , https://gohugo.io/getting-started/quick-start/
 Step 1: Install the Hugo.
-brew install hugo Step 2: Create a new hugo site.
-hugo new site hugo Step 3: Download and install a theme from Github or the official website of Hugo. I chose the theme &amp;ldquo;ananke&amp;rdquo;
-Step 4: You can start the Hugo server, and add your contents in the file of the /content/posts.</description>
+1  brew install hugo   Step 2: Create a new hugo site.
+1  hugo new site hugo   Step 3: Download and install a theme from Github or the official website of Hugo. I chose the theme &amp;ldquo;ananke&amp;rdquo;</description>
     </item>
     
   </channel>
