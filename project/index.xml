@@ -21,7 +21,7 @@
 Problem 13: Large Sum Work out the first ten digits of the sum of the following one-hundread 50-digit numbers.
   Solved by 225065
   Link: https://projecteuler.net/problem=13
-  nums = &amp;quot;&amp;quot;&amp;quot; one-hundred 50-digit numbers &amp;quot;&amp;quot;&amp;quot;&amp;quot; def large_sum(a): &amp;quot;&amp;quot;&amp;quot;Sum 50-digit numbers and return the first ten digits Parameters ---------- a : string A one-hundred numbers string that is seperated by &#39;\n&#39; Returns ------- int First ten digits of the calculation &amp;quot;&amp;quot;&amp;quot; a = a.</description>
+  nums = &amp;quot;&amp;quot;&amp;quot; one-hundred 50-digit numbers &amp;quot;&amp;quot;&amp;quot;&amp;quot; def large_sum(a): &amp;quot;&amp;quot;&amp;quot;Sum 50-digit numbers and return the first ten digits Parameters ---------- a : string A one-hundred numbers string that is separated by &#39;\n&#39; Returns ------- int First ten digits of the calculation &amp;quot;&amp;quot;&amp;quot; a = a.</description>
     </item>
     
   </channel>
