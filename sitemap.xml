@@ -3,6 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://zhhmyz.github.io/posts/assignment2/</loc>
+    <lastmod>2020-09-06T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://zhhmyz.github.io/project/assignment2/</loc>
     <lastmod>2020-09-06T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -11,6 +18,13 @@
   
   <url>
     <loc>https://zhhmyz.github.io/</loc>
+    <lastmod>2020-09-06T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhhmyz.github.io/posts/</loc>
     <lastmod>2020-09-06T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -31,14 +45,21 @@
   </url>
   
   <url>
-    <loc>https://zhhmyz.github.io/posts/my-first-post/</loc>
+    <loc>https://zhhmyz.github.io/blog/</loc>
     <lastmod>2020-08-18T19:17:05-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://zhhmyz.github.io/posts/</loc>
+    <loc>https://zhhmyz.github.io/blog/my-first-post/</loc>
+    <lastmod>2020-08-18T19:17:05-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhhmyz.github.io/posts/my-first-post/</loc>
     <lastmod>2020-08-18T19:17:05-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

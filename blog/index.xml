@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Mengyue Han</title>
+    <link>https://zhhmyz.github.io/blog/</link>
+    <description>Recent content in Blogs on Mengyue Han</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 18 Aug 2020 19:17:05 -0400</lastBuildDate>
+    
+	<atom:link href="https://zhhmyz.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How I Made this Hugo Site</title>
+      <link>https://zhhmyz.github.io/blog/my-first-post/</link>
+      <pubDate>Tue, 18 Aug 2020 19:17:05 -0400</pubDate>
+      
+      <guid>https://zhhmyz.github.io/blog/my-first-post/</guid>
+      <description>Bascially, I follow the tutorial of Hugo (Quick Start) to set up this website. The website of tutoials I read are https://gohugo.io/hosting-and-deployment/hosting-on-github/ , https://gohugo.io/getting-started/quick-start/
+Step 1: Install the Hugo.
+1  brew install hugo   Step 2: Create a new hugo site.
+1  hugo new site hugo   Step 3: Download and install a theme from Github or the official website of Hugo. I chose the theme &amp;ldquo;ananke&amp;rdquo;</description>
+    </item>
+    
+  </channel>
+</rss>
