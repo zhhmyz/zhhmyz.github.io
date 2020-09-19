@@ -1,10 +1,9 @@
-.main-content-wrap{
-    max-width: 974px
+.nested-img img {
+    width: 60%;
+    max-width: 60%;
+    display: block;
 }
-.page-content{
-    margin: 0 auto;
-    max-width: 974px;
-}
-@media screen and (min-width: 60em) {
-    .w-two-thirds-l { width: 90%; }
+.nested-links a {
+    color: #314070;
+    transition: color .15s ease-in;
 }

@@ -39,7 +39,7 @@
 <meta itemprop="description" content="For Assignment 2">
 <meta itemprop="datePublished" content="2020-09-06T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2020-09-06T00:00:00+00:00" />
-<meta itemprop="wordCount" content="928">
+<meta itemprop="wordCount" content="838">
 
 
 
@@ -173,11 +173,11 @@
 
       
       
-        <span class="f6 mv4 dib tracked"> - 5 minutes read</span>
-        <span class="f6 mv4 dib tracked"> - 928 words</span>
+        <span class="f6 mv4 dib tracked"> - 4 minutes read</span>
+        <span class="f6 mv4 dib tracked"> - 838 words</span>
       
     </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-90-l"><p>In this assignment, I will solve 3 problems from the Euler Project using Python. You can access the source code here: <a href="https://github.com/zhhmyz/BIOS-823">https://github.com/zhhmyz/BIOS-823</a></p>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr3-l w-two-90-l"><p>In this assignment, I will solve 3 problems from the Euler Project using Python. You can access the source code here: <a href="https://github.com/zhhmyz/BIOS-823">https://github.com/zhhmyz/BIOS-823</a></p>
 <h3 id="problem-13-large-sum">Problem 13: Large Sum</h3>
 <p>Work out the first ten digits of the sum of the following one-hundread 50-digit numbers.</p>
 <ul>
@@ -188,61 +188,31 @@
 <p>Link: <a href="https://projecteuler.net/problem=13">https://projecteuler.net/problem=13</a></p>
 </li>
 </ul>
-<div class="highlight"><div style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#111">nums</span> <span style="color:#f92672">=</span> <span style="color:#d88200">&#34;&#34;&#34;
-</span><span style="color:#d88200">one-hundred 50-digit numbers
-</span><span style="color:#d88200">&#34;&#34;&#34;&#34;</span>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#000">nums</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;&#34;&#34;
+</span><span style="color:#4e9a06">one-hundred 50-digit numbers
+</span><span style="color:#4e9a06">&#34;&#34;&#34;&#34;</span>
 
-<span style="color:#00a8c8">def</span> <span style="color:#75af00">large_sum</span><span style="color:#111">(</span><span style="color:#111">a</span><span style="color:#111">):</span>
-    <span style="color:#d88200">&#34;&#34;&#34;Sum 50-digit numbers and return the first ten digits
-</span><span style="color:#d88200">
-</span><span style="color:#d88200">    Parameters
-</span><span style="color:#d88200">    ----------
-</span><span style="color:#d88200">    a : string
-</span><span style="color:#d88200">        A one-hundred numbers string that is separated by &#39;</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#39;
-</span><span style="color:#d88200">        
-</span><span style="color:#d88200">    Returns
-</span><span style="color:#d88200">    -------
-</span><span style="color:#d88200">    int
-</span><span style="color:#d88200">    	First ten digits of the calculation
-</span><span style="color:#d88200">    &#34;&#34;&#34;</span>
-    <span style="color:#111">a</span> <span style="color:#f92672">=</span> <span style="color:#111">a</span><span style="color:#f92672">.</span><span style="color:#111">split</span><span style="color:#111">(</span><span style="color:#d88200">&#34;</span><span style="color:#8045ff">\n</span><span style="color:#d88200">&#34;</span><span style="color:#111">)</span>
-    <span style="color:#111">total</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-    <span style="color:#00a8c8">for</span> <span style="color:#111">i</span> <span style="color:#f92672">in</span> <span style="color:#111">range</span><span style="color:#111">(</span><span style="color:#111">len</span><span style="color:#111">(</span><span style="color:#111">a</span><span style="color:#111">)):</span>
-        <span style="color:#00a8c8">if</span> <span style="color:#111">a</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]</span> <span style="color:#f92672">!=</span> <span style="color:#d88200">&#39;&#39;</span><span style="color:#111">:</span>
-            <span style="color:#111">total</span> <span style="color:#f92672">=</span> <span style="color:#111">total</span> <span style="color:#f92672">+</span> <span style="color:#111">int</span><span style="color:#111">(</span><span style="color:#111">a</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">])</span>
-    <span style="color:#00a8c8">return</span> <span style="color:#111">int</span><span style="color:#111">(</span><span style="color:#111">str</span><span style="color:#111">(</span><span style="color:#111">total</span><span style="color:#111">)[:</span><span style="color:#ae81ff">10</span><span style="color:#111">])</span>
-<span style="color:#111">large_sum</span><span style="color:#111">(</span><span style="color:#111">nums</span><span style="color:#111">)</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>I first tried to split 100 numbers by <code>\n</code>. Then I use a for loop to iteratively add each number to the variable <code>total</code>. Remeber to convert the number to an integer before adding them up. And return the first 10 digits of the summation.</p>
+<span style="color:#204a87;font-weight:bold">def</span> <span style="color:#000">large_sum</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">a</span><span style="color:#000;font-weight:bold">):</span>
+    <span style="color:#4e9a06">&#34;&#34;&#34;Sum 50-digit numbers and return the first ten digits
+</span><span style="color:#4e9a06">
+</span><span style="color:#4e9a06">    Parameters
+</span><span style="color:#4e9a06">    ----------
+</span><span style="color:#4e9a06">    a : string
+</span><span style="color:#4e9a06">        A one-hundred numbers string that is separated by &#39;</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#39;
+</span><span style="color:#4e9a06">        
+</span><span style="color:#4e9a06">    Returns
+</span><span style="color:#4e9a06">    -------
+</span><span style="color:#4e9a06">    int
+</span><span style="color:#4e9a06">    	First ten digits of the calculation
+</span><span style="color:#4e9a06">    &#34;&#34;&#34;</span>
+    <span style="color:#000">a</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">a</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">split</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;</span><span style="color:#4e9a06">\n</span><span style="color:#4e9a06">&#34;</span><span style="color:#000;font-weight:bold">)</span>
+    <span style="color:#000">total</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">0</span>
+    <span style="color:#204a87;font-weight:bold">for</span> <span style="color:#000">i</span> <span style="color:#204a87;font-weight:bold">in</span> <span style="color:#204a87">range</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87">len</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">a</span><span style="color:#000;font-weight:bold">)):</span>
+        <span style="color:#204a87;font-weight:bold">if</span> <span style="color:#000">a</span><span style="color:#000;font-weight:bold">[</span><span style="color:#000">i</span><span style="color:#000;font-weight:bold">]</span> <span style="color:#ce5c00;font-weight:bold">!=</span> <span style="color:#4e9a06">&#39;&#39;</span><span style="color:#000;font-weight:bold">:</span>
+            <span style="color:#000">total</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">total</span> <span style="color:#ce5c00;font-weight:bold">+</span> <span style="color:#204a87">int</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">a</span><span style="color:#000;font-weight:bold">[</span><span style="color:#000">i</span><span style="color:#000;font-weight:bold">])</span>
+    <span style="color:#204a87;font-weight:bold">return</span> <span style="color:#204a87">int</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87">str</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">total</span><span style="color:#000;font-weight:bold">)[:</span><span style="color:#0000cf;font-weight:bold">10</span><span style="color:#000;font-weight:bold">])</span>
+<span style="color:#000">large_sum</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">nums</span><span style="color:#000;font-weight:bold">)</span>
+</code></pre></div><p>I first tried to split 100 numbers by <code>\n</code>. Then I use a for loop to iteratively add each number to the variable <code>total</code>. Remeber to convert the number to an integer before adding them up. And return the first 10 digits of the summation.</p>
 <p>Ran the above code with the given data, the returned answer is 5537376230.</p>
 <h3 id="problem-42-coded-triangle-numbers">Problem 42: Coded Triangle Numbers</h3>
 <p>The nth term of the sequence of triangle numbers is given by  <em>tn</em> = ½<em>n</em>(<em>n</em>+1) ; so the first ten triangle numbers are:</p>
@@ -253,99 +223,50 @@
 <li>Solved by: 73178</li>
 <li>Link: <a href="https://projecteuler.net/problem=42">https://projecteuler.net/problem=42</a></li>
 </ul>
-<div class="highlight"><div style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00a8c8">def</span> <span style="color:#75af00">triangle_nums</span><span style="color:#111">(</span><span style="color:#111">file</span><span style="color:#111">,</span> <span style="color:#111">nth</span><span style="color:#111">):</span>
-  	<span style="color:#d88200">&#34;&#34;&#34; Read words from the local file,
-</span><span style="color:#d88200">  		Calculate the value of each word by adding its corresponding alphabetical positions,
-</span><span style="color:#d88200">  		Return the number of triangle words
-</span><span style="color:#d88200">  		 
-</span><span style="color:#d88200">  	Parameters
-</span><span style="color:#d88200">    ---------- 
-</span><span style="color:#d88200">    file : local file position
-</span><span style="color:#d88200">  		  A &#39;.txt&#39; file that contains English words
-</span><span style="color:#d88200">  	nth : int
-</span><span style="color:#d88200">  		  An integer that represents the number of triangle number we want, 
-</span><span style="color:#d88200">  		  choose a large number(eg.2000) to cover the entire alphabetic sum
-</span><span style="color:#d88200">  	
-</span><span style="color:#d88200">  	Returns
-</span><span style="color:#d88200">  	-------
-</span><span style="color:#d88200">  	int
-</span><span style="color:#d88200">  		  The number of triangle words in the file
-</span><span style="color:#d88200">  	&#34;&#34;&#34;</span>
-    <span style="color:#f92672">from</span> <span style="color:#111">numpy</span> <span style="color:#f92672">import</span> <span style="color:#111">loadtxt</span>
-    <span style="color:#f92672">import</span> <span style="color:#111">string</span>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">def</span> <span style="color:#000">triangle_nums</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87">file</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">nth</span><span style="color:#000;font-weight:bold">):</span>
+  	<span style="color:#4e9a06">&#34;&#34;&#34; Read words from the local file,
+</span><span style="color:#4e9a06">  		Calculate the value of each word by adding its corresponding alphabetical positions,
+</span><span style="color:#4e9a06">  		Return the number of triangle words
+</span><span style="color:#4e9a06">  		 
+</span><span style="color:#4e9a06">  	Parameters
+</span><span style="color:#4e9a06">    ---------- 
+</span><span style="color:#4e9a06">    file : local file position
+</span><span style="color:#4e9a06">  		  A &#39;.txt&#39; file that contains English words
+</span><span style="color:#4e9a06">  	nth : int
+</span><span style="color:#4e9a06">  		  An integer that represents the number of triangle number we want, 
+</span><span style="color:#4e9a06">  		  choose a large number(eg.2000) to cover the entire alphabetic sum
+</span><span style="color:#4e9a06">  	
+</span><span style="color:#4e9a06">  	Returns
+</span><span style="color:#4e9a06">  	-------
+</span><span style="color:#4e9a06">  	int
+</span><span style="color:#4e9a06">  		  The number of triangle words in the file
+</span><span style="color:#4e9a06">  	&#34;&#34;&#34;</span>
+    <span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">numpy</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">loadtxt</span>
+    <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">string</span>
 
-    <span style="color:#75715e"># read file</span>
-    <span style="color:#00a8c8">with</span> <span style="color:#111">open</span><span style="color:#111">(</span><span style="color:#111">file</span><span style="color:#111">,</span> <span style="color:#d88200">&#34;rt&#34;</span><span style="color:#111">)</span> <span style="color:#00a8c8">as</span> <span style="color:#111">in_file</span><span style="color:#111">:</span>
-        <span style="color:#00a8c8">with</span> <span style="color:#111">open</span><span style="color:#111">(</span><span style="color:#d88200">&#34;out.txt&#34;</span><span style="color:#111">,</span> <span style="color:#d88200">&#34;wt&#34;</span><span style="color:#111">)</span> <span style="color:#00a8c8">as</span> <span style="color:#111">out</span><span style="color:#111">:</span>
-            <span style="color:#00a8c8">for</span> <span style="color:#111">line</span> <span style="color:#f92672">in</span> <span style="color:#111">in_file</span><span style="color:#111">:</span>
-                <span style="color:#111">out</span><span style="color:#f92672">.</span><span style="color:#111">write</span><span style="color:#111">(</span><span style="color:#111">line</span><span style="color:#f92672">.</span><span style="color:#111">replace</span><span style="color:#111">(</span><span style="color:#d88200">&#39;&#34;&#39;</span><span style="color:#111">,</span> <span style="color:#d88200">&#39;&#39;</span><span style="color:#111">))</span>
-    <span style="color:#111">words</span> <span style="color:#f92672">=</span> <span style="color:#111">list</span><span style="color:#111">(</span><span style="color:#111">loadtxt</span><span style="color:#111">(</span><span style="color:#d88200">&#34;./out.txt&#34;</span><span style="color:#111">,</span> <span style="color:#111">dtype</span><span style="color:#f92672">=</span><span style="color:#111">str</span><span style="color:#111">,</span> <span style="color:#111">delimiter</span><span style="color:#f92672">=</span><span style="color:#d88200">&#34;,&#34;</span><span style="color:#111">,</span> <span style="color:#111">unpack</span><span style="color:#f92672">=</span><span style="color:#111">False</span><span style="color:#111">))</span>
+    <span style="color:#8f5902;font-style:italic"># read file</span>
+    <span style="color:#204a87;font-weight:bold">with</span> <span style="color:#204a87">open</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87">file</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#34;rt&#34;</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#204a87;font-weight:bold">as</span> <span style="color:#000">in_file</span><span style="color:#000;font-weight:bold">:</span>
+        <span style="color:#204a87;font-weight:bold">with</span> <span style="color:#204a87">open</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;out.txt&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#34;wt&#34;</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#204a87;font-weight:bold">as</span> <span style="color:#000">out</span><span style="color:#000;font-weight:bold">:</span>
+            <span style="color:#204a87;font-weight:bold">for</span> <span style="color:#000">line</span> <span style="color:#204a87;font-weight:bold">in</span> <span style="color:#000">in_file</span><span style="color:#000;font-weight:bold">:</span>
+                <span style="color:#000">out</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">write</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">line</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">replace</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;&#34;&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#39;&#39;</span><span style="color:#000;font-weight:bold">))</span>
+    <span style="color:#000">words</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87">list</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">loadtxt</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;./out.txt&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">dtype</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#204a87">str</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">delimiter</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;,&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">unpack</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#3465a4">False</span><span style="color:#000;font-weight:bold">))</span>
 
-    <span style="color:#75715e"># create triangle numbers</span>
-    <span style="color:#111">tri_num</span> <span style="color:#f92672">=</span> <span style="color:#111">[</span><span style="color:#111">i</span> <span style="color:#f92672">*</span> <span style="color:#111">(</span><span style="color:#111">i</span><span style="color:#f92672">+</span><span style="color:#ae81ff">1</span><span style="color:#111">)</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2</span> <span style="color:#00a8c8">for</span> <span style="color:#111">i</span> <span style="color:#f92672">in</span> <span style="color:#111">range</span><span style="color:#111">(</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span> <span style="color:#111">nth</span><span style="color:#111">)]</span>
+    <span style="color:#8f5902;font-style:italic"># create triangle numbers</span>
+    <span style="color:#000">tri_num</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#000">i</span> <span style="color:#ce5c00;font-weight:bold">*</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">i</span><span style="color:#ce5c00;font-weight:bold">+</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">)</span><span style="color:#ce5c00;font-weight:bold">/</span><span style="color:#0000cf;font-weight:bold">2</span> <span style="color:#204a87;font-weight:bold">for</span> <span style="color:#000">i</span> <span style="color:#204a87;font-weight:bold">in</span> <span style="color:#204a87">range</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">nth</span><span style="color:#000;font-weight:bold">)]</span>
 
-    <span style="color:#75715e"># create alphabetical_num dictionary</span>
-    <span style="color:#111">alpha</span> <span style="color:#f92672">=</span> <span style="color:#111">dict</span><span style="color:#111">(</span><span style="color:#111">zip</span><span style="color:#111">(</span><span style="color:#111">string</span><span style="color:#f92672">.</span><span style="color:#111">ascii_uppercase</span><span style="color:#111">,</span> <span style="color:#111">range</span><span style="color:#111">(</span><span style="color:#ae81ff">1</span><span style="color:#111">,</span> <span style="color:#ae81ff">27</span><span style="color:#111">)))</span>
+    <span style="color:#8f5902;font-style:italic"># create alphabetical_num dictionary</span>
+    <span style="color:#000">alpha</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87">dict</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87">zip</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">string</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">ascii_uppercase</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#204a87">range</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">27</span><span style="color:#000;font-weight:bold">)))</span>
 
-    <span style="color:#75715e"># calculate the count</span>
-    <span style="color:#111">sum</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-    <span style="color:#00a8c8">for</span> <span style="color:#111">word</span> <span style="color:#f92672">in</span> <span style="color:#111">words</span><span style="color:#111">:</span>
-        <span style="color:#111">word_value</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-        <span style="color:#00a8c8">for</span> <span style="color:#111">i</span> <span style="color:#f92672">in</span> <span style="color:#111">range</span><span style="color:#111">(</span><span style="color:#111">len</span><span style="color:#111">(</span><span style="color:#111">word</span><span style="color:#111">)):</span>
-            <span style="color:#111">word_value</span> <span style="color:#f92672">+=</span> <span style="color:#111">int</span><span style="color:#111">(</span><span style="color:#111">alpha</span><span style="color:#f92672">.</span><span style="color:#111">get</span><span style="color:#111">(</span><span style="color:#111">word</span><span style="color:#111">[</span><span style="color:#111">i</span><span style="color:#111">]))</span>
-        <span style="color:#00a8c8">if</span> <span style="color:#111">word_value</span> <span style="color:#f92672">in</span> <span style="color:#111">tri_num</span><span style="color:#111">:</span>
-            <span style="color:#111">sum</span> <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
-    <span style="color:#00a8c8">return</span> <span style="color:#111">sum</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>I solved this problem by separating it into four parts.</p>
+    <span style="color:#8f5902;font-style:italic"># calculate the count</span>
+    <span style="color:#204a87">sum</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">0</span>
+    <span style="color:#204a87;font-weight:bold">for</span> <span style="color:#000">word</span> <span style="color:#204a87;font-weight:bold">in</span> <span style="color:#000">words</span><span style="color:#000;font-weight:bold">:</span>
+        <span style="color:#000">word_value</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">0</span>
+        <span style="color:#204a87;font-weight:bold">for</span> <span style="color:#000">i</span> <span style="color:#204a87;font-weight:bold">in</span> <span style="color:#204a87">range</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87">len</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">word</span><span style="color:#000;font-weight:bold">)):</span>
+            <span style="color:#000">word_value</span> <span style="color:#ce5c00;font-weight:bold">+=</span> <span style="color:#204a87">int</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">alpha</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">get</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">word</span><span style="color:#000;font-weight:bold">[</span><span style="color:#000">i</span><span style="color:#000;font-weight:bold">]))</span>
+        <span style="color:#204a87;font-weight:bold">if</span> <span style="color:#000">word_value</span> <span style="color:#204a87;font-weight:bold">in</span> <span style="color:#000">tri_num</span><span style="color:#000;font-weight:bold">:</span>
+            <span style="color:#204a87">sum</span> <span style="color:#ce5c00;font-weight:bold">+=</span> <span style="color:#0000cf;font-weight:bold">1</span>
+    <span style="color:#204a87;font-weight:bold">return</span> <span style="color:#204a87">sum</span>
+</code></pre></div><p>I solved this problem by separating it into four parts.</p>
 <p>First, I read in the file and change the delimiter to &ldquo;,&rdquo; for convenient operation. Converted the file to a word list.</p>
 <p>Second, I created a triangle number list by the formula it provided.</p>
 <p>Third, I made a dictionary that pairs 26 letters in the alphabet with their corresponding values (eg: A:1,B:2 etc)</p>
@@ -363,59 +284,30 @@
 <p>Link: <a href="https://projecteuler.net/problem=145">https://projecteuler.net/problem=145</a></p>
 </li>
 </ul>
-<div class="highlight"><div style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#00a8c8">def</span> <span style="color:#75af00">reversible</span><span style="color:#111">(</span><span style="color:#111">n</span><span style="color:#111">):</span>
-  	<span style="color:#d88200">&#34;&#34;&#34;Find the reversible number
-</span><span style="color:#d88200">  	
-</span><span style="color:#d88200">  	Parameters
-</span><span style="color:#d88200">    ---------- 
-</span><span style="color:#d88200">    n : int
-</span><span style="color:#d88200">    	Number limit, find any target value below this number
-</span><span style="color:#d88200">  	
-</span><span style="color:#d88200">  	Returns
-</span><span style="color:#d88200">    ------- 
-</span><span style="color:#d88200">  	int
-</span><span style="color:#d88200">  		The number of reversible numbers that being find
-</span><span style="color:#d88200">  	&#34;&#34;&#34;</span>
-    <span style="color:#111">num</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-    <span style="color:#111">even</span> <span style="color:#f92672">=</span> <span style="color:#111">[</span><span style="color:#d88200">&#39;0&#39;</span><span style="color:#111">,</span><span style="color:#d88200">&#39;2&#39;</span><span style="color:#111">,</span><span style="color:#d88200">&#39;4&#39;</span><span style="color:#111">,</span><span style="color:#d88200">&#39;6&#39;</span><span style="color:#111">,</span><span style="color:#d88200">&#39;8&#39;</span><span style="color:#111">]</span>
-    <span style="color:#00a8c8">for</span> <span style="color:#111">i</span> <span style="color:#f92672">in</span> <span style="color:#111">range</span><span style="color:#111">(</span><span style="color:#111">n</span><span style="color:#111">):</span>
-        <span style="color:#00a8c8">if</span> <span style="color:#111">str</span><span style="color:#111">(</span><span style="color:#111">i</span><span style="color:#111">)[</span><span style="color:#ae81ff">0</span><span style="color:#111">]</span> <span style="color:#f92672">!=</span> <span style="color:#d88200">&#39;0&#39;</span> <span style="color:#f92672">and</span> <span style="color:#111">str</span><span style="color:#111">(</span><span style="color:#111">i</span><span style="color:#111">)[</span><span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#111">]</span> <span style="color:#f92672">!=</span> <span style="color:#d88200">&#39;0&#39;</span><span style="color:#111">:</span>
-            <span style="color:#111">rev</span> <span style="color:#f92672">=</span> <span style="color:#111">int</span><span style="color:#111">(</span><span style="color:#111">str</span><span style="color:#111">(</span><span style="color:#111">i</span><span style="color:#111">)[::</span><span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#111">])</span>
-            <span style="color:#111">sum</span> <span style="color:#f92672">=</span> <span style="color:#111">i</span> <span style="color:#f92672">+</span> <span style="color:#111">rev</span>
-            <span style="color:#111">inter</span> <span style="color:#f92672">=</span> <span style="color:#111">set</span><span style="color:#111">(</span><span style="color:#111">str</span><span style="color:#111">(</span><span style="color:#111">sum</span><span style="color:#111">))</span><span style="color:#f92672">.</span><span style="color:#111">intersection</span><span style="color:#111">(</span><span style="color:#111">set</span><span style="color:#111">(</span><span style="color:#111">even</span><span style="color:#111">))</span>
-            <span style="color:#00a8c8">if</span> <span style="color:#f92672">not</span> <span style="color:#111">inter</span><span style="color:#111">:</span>
-                <span style="color:#111">num</span> <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
-    <span style="color:#00a8c8">return</span> <span style="color:#111">num</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>I first exclude numbers that begin or end with &lsquo;0&rsquo; since such number is not allowed in the problem description. Calculate the sum of number itself and its reversed number. Then I made this sum to a set of string and intersect it with the set of even numbers. If the intersection fails, which indicates that the sum consists of entirely odd digits, then add 1 to the total number.</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">def</span> <span style="color:#000">reversible</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">n</span><span style="color:#000;font-weight:bold">):</span>
+  	<span style="color:#4e9a06">&#34;&#34;&#34;Find the reversible number
+</span><span style="color:#4e9a06">  	
+</span><span style="color:#4e9a06">  	Parameters
+</span><span style="color:#4e9a06">    ---------- 
+</span><span style="color:#4e9a06">    n : int
+</span><span style="color:#4e9a06">    	Number limit, find any target value below this number
+</span><span style="color:#4e9a06">  	
+</span><span style="color:#4e9a06">  	Returns
+</span><span style="color:#4e9a06">    ------- 
+</span><span style="color:#4e9a06">  	int
+</span><span style="color:#4e9a06">  		The number of reversible numbers that being find
+</span><span style="color:#4e9a06">  	&#34;&#34;&#34;</span>
+    <span style="color:#000">num</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">0</span>
+    <span style="color:#000">even</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#39;0&#39;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#4e9a06">&#39;2&#39;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#4e9a06">&#39;4&#39;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#4e9a06">&#39;6&#39;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#4e9a06">&#39;8&#39;</span><span style="color:#000;font-weight:bold">]</span>
+    <span style="color:#204a87;font-weight:bold">for</span> <span style="color:#000">i</span> <span style="color:#204a87;font-weight:bold">in</span> <span style="color:#204a87">range</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">n</span><span style="color:#000;font-weight:bold">):</span>
+        <span style="color:#204a87;font-weight:bold">if</span> <span style="color:#204a87">str</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">i</span><span style="color:#000;font-weight:bold">)[</span><span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">]</span> <span style="color:#ce5c00;font-weight:bold">!=</span> <span style="color:#4e9a06">&#39;0&#39;</span> <span style="color:#204a87;font-weight:bold">and</span> <span style="color:#204a87">str</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">i</span><span style="color:#000;font-weight:bold">)[</span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">]</span> <span style="color:#ce5c00;font-weight:bold">!=</span> <span style="color:#4e9a06">&#39;0&#39;</span><span style="color:#000;font-weight:bold">:</span>
+            <span style="color:#000">rev</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87">int</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87">str</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">i</span><span style="color:#000;font-weight:bold">)[::</span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">])</span>
+            <span style="color:#204a87">sum</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">i</span> <span style="color:#ce5c00;font-weight:bold">+</span> <span style="color:#000">rev</span>
+            <span style="color:#000">inter</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87">set</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87">str</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87">sum</span><span style="color:#000;font-weight:bold">))</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">intersection</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87">set</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">even</span><span style="color:#000;font-weight:bold">))</span>
+            <span style="color:#204a87;font-weight:bold">if</span> <span style="color:#204a87;font-weight:bold">not</span> <span style="color:#000">inter</span><span style="color:#000;font-weight:bold">:</span>
+                <span style="color:#000">num</span> <span style="color:#ce5c00;font-weight:bold">+=</span> <span style="color:#0000cf;font-weight:bold">1</span>
+    <span style="color:#204a87;font-weight:bold">return</span> <span style="color:#000">num</span>
+</code></pre></div><p>I first exclude numbers that begin or end with &lsquo;0&rsquo; since such number is not allowed in the problem description. Calculate the sum of number itself and its reversed number. Then I made this sum to a set of string and intersect it with the set of even numbers. If the intersection fails, which indicates that the sum consists of entirely odd digits, then add 1 to the total number.</p>
 <p>Ran the code with one-billion, the function returns the answer 608720. However, it takes around 10 minutes to get that answer. More efficient code rather than the brutal &lsquo;for loop&rsquo; is needed to decrease the operating time.</p>
 <ul class="pa0">
   

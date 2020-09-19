@@ -5641,13 +5641,13 @@ code, .code {
 }
 
 .nested-img img {
-  width: 100%;
-  max-width: 100%;
+  width: 60%;
+  max-width: 60%;
   display: block;
 }
 
 .nested-links a {
-  color: #357edd;
+  color: #314070;
   transition: color .15s ease-in;
 }
 
