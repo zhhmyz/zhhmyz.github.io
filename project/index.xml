@@ -18,7 +18,9 @@
       
       <guid>https://zhhmyz.github.io/project/assignment3/</guid>
       <description>In this assignment, I will create 3 informative visualizations about malaria data using Python.
-Source data and code  Malaria dataset contains three tables: Malaria incidence and deaths by country, deaths by age across the world and time. You can access to the source code for visualizations here: Github  Informative visualizations 1. Malaria deaths across time in China I created a lineplot using seaborn to depict the overall death caused by malaria from 1990-2015 in China.</description>
+Source data and code   Malaria dataset contains three tables: Malaria incidence and deaths by country, deaths by age across the world and time.
+  You can access to the source code for visualizations here: Github
+  Informative visualizations 1. Malaria deaths across time in China I created a lineplot using seaborn to depict the overall death caused by malaria from 1990-2015 in China.</description>
     </item>
     
     <item>
