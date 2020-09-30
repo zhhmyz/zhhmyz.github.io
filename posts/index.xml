@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Mengyue Han</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 19 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 29 Sep 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://zhhmyz.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>HW4 : Create sqlite3 schema of Spotify Songs dataset in 3rd normal form (3NF)</title>
+      <link>https://zhhmyz.github.io/posts/assignment4/</link>
+      <pubDate>Tue, 29 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhhmyz.github.io/posts/assignment4/</guid>
+      <description>Source data and code  The Spotify Web API provides artist, album, playlist, track and audio features data. Source Code of this blog  Database normalization  Normalization is usually performed for reducing redundancy and preventing inconsistencies. Three normal forms should be completed after the data normalization process.  First Normal Form (1NF)  Table has primary key No composite values in each cell No repeating columns  Get access to the data</description>
+    </item>
     
     <item>
       <title>HW3 : Informative visualizations about malaria</title>
@@ -22,7 +31,7 @@ Source data and code  Malaria dataset contains three tables: Malaria incidence a
     </item>
     
     <item>
-      <title>Assignment 2</title>
+      <title>HW2 : Solve three problems from Euler Project</title>
       <link>https://zhhmyz.github.io/posts/assignment2/</link>
       <pubDate>Sun, 06 Sep 2020 00:00:00 +0000</pubDate>
       
