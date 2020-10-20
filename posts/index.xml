@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Mengyue Han</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://zhhmyz.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>HW5 : Find the oldest person in Star Wars API</title>
+      <link>https://zhhmyz.github.io/posts/assignment5/</link>
+      <pubDate>Mon, 19 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhhmyz.github.io/posts/assignment5/</guid>
+      <description>Source data and code  Star Wars API provides a good resource to practice with HTTP requests. Access to the Source code  1. Find the oldest person(or robot or alien) import requests import json import pandas as pd person = [] for i in range(1,83): p = requests.get(&amp;#34;https://swapi.dev/api/people/{}&amp;#34;.format(i)).json() person.append(p) df = pd.json_normalize(person) Take a sample of the data we read in, we can observe that the age is determined by the column birth_year birth_year is expressed as number + BBY(ABY), where BBY(ABY) represents Before the Battle of Yavin or After the Battle of Yavin.</description>
+    </item>
     
     <item>
       <title>HW4 : Create sqlite3 schema of Spotify Songs dataset in 3rd normal form (3NF)</title>
