@@ -6,10 +6,28 @@
     <description>Recent content on Mengyue Han</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://zhhmyz.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>HW6 : Dashboard visualization of US PhDs</title>
+      <link>https://zhhmyz.github.io/posts/assignment6/</link>
+      <pubDate>Fri, 30 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhhmyz.github.io/posts/assignment6/</guid>
+      <description>Source data and code  Science &amp;amp; Engineering Doctorates provides tables about detailed data on doctorate recipients such as demographic characteristics etc. Access to the Source code  Task  Do some analysis in pandas on the data and make dashboard visualization using dash I will use table12 that summarizes doctorate recipients by major field of study in year 1987-2017  Data analysis  Download and read the data into a dataframe  import pandas as pd df = pd.</description>
+    </item>
+    
+    <item>
+      <title>HW6 : Dashboard visualization of US PhDs</title>
+      <link>https://zhhmyz.github.io/project/assignment6/</link>
+      <pubDate>Fri, 30 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhhmyz.github.io/project/assignment6/</guid>
+      <description>Source data and code  Science &amp;amp; Engineering Doctorates provides tables about detailed data on doctorate recipients such as demographic characteristics etc. Access to the Source code  Task  Do some analysis in pandas on the data and make dashboard visualization using dash I will use table12 that summarizes doctorate recipients by major field of study in year 1987-2017  Data analysis  Download and read the data into a dataframe  import pandas as pd df = pd.</description>
+    </item>
     
     <item>
       <title>HW5 : Find the oldest person in Star Wars API</title>
