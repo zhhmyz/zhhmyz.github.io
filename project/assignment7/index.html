@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>HW7 : Deep learning model to classify insect images | Mengyue Han</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.74.3" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.4fc0b62e4b82c997bb0041217cd6b979.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+<link rel="shortcut icon" href="/favicon_io/favicon-16x16.png" type="image/x-icon" />
+
+
+
+    
+
+    
+    
+    <meta property="og:title" content="HW7 : Deep learning model to classify insect images" />
+<meta property="og:description" content="For Assignment 7" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://zhhmyz.github.io/project/assignment7/" />
+<meta property="article:published_time" content="2020-11-14T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-11-14T00:00:00+00:00" />
+<meta itemprop="name" content="HW7 : Deep learning model to classify insect images">
+<meta itemprop="description" content="For Assignment 7">
+<meta itemprop="datePublished" content="2020-11-14T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2020-11-14T00:00:00+00:00" />
+<meta itemprop="wordCount" content="529">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="HW7 : Deep learning model to classify insect images"/>
+<meta name="twitter:description" content="For Assignment 7"/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-navy">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Mengyue Han
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/blog/" title="Blogs page">
+              Blogs
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/posts/" title="Posts page">
+              Posts
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/project/" title="Projects page">
+              Projects
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+
+
+
+
+
+
+
+
+<a href="https://github.com/zhhmyz/zhhmyz.github.io" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        PROJECTS
+      </aside>
+      
+
+
+
+
+  <div id="sharing" class="mt3">
+
+    
+    <a href="https://www.facebook.com/sharer.php?u=https://zhhmyz.github.io/project/assignment7/" class="facebook no-underline" aria-label="share on Facebook">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+    </a>
+
+    
+    
+    <a href="https://twitter.com/share?url=https://zhhmyz.github.io/project/assignment7/&amp;text=HW7%20:%20Deep%20learning%20model%20to%20classify%20insect%20images" class="twitter no-underline" aria-label="share on Twitter">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+    </a>
+
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://zhhmyz.github.io/project/assignment7/&amp;title=HW7%20:%20Deep%20learning%20model%20to%20classify%20insect%20images" class="linkedin no-underline" aria-label="share on LinkedIn">
+      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+    </a>
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">HW7 : Deep learning model to classify insect images</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2020-11-14T00:00:00Z">November 14, 2020</time>
+
+      
+      
+        <span class="f6 mv4 dib tracked"> - 3 minutes read</span>
+        <span class="f6 mv4 dib tracked"> - 529 words</span>
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr3-l w-two-90-l"><h3 id="source-data-and-code">Source data and code</h3>
+<ul>
+<li><a href="https://www.insectimages.org/index.cfm">Insect images</a></li>
+<li>Access to the github <a href="https://github.com/zhhmyz/BIOS-823">Source code</a></li>
+</ul>
+<h3 id="how-does-neural-network-works">How does neural network works</h3>
+<ul>
+<li>The human eye sees an image as a set of signials, interpreted by the brain visual cortex. In the process of neural network image classification, images are turned into a series of vectors that depict physical objects and features. Computer vision systems analyze these constructs by simplifying images and extracting the most important information, then organzing data through feature extraction and classification. Finally, computer use classification algorithms to make a decision about the image &ndash; which catrgory they belong to.</li>
+<li>To correctly predict image labels, neural network need thousands of images to get training. Once training images are prepared, you&rsquo;ll need a system that can process them and use them to make a prediction on new images. This is where neural network comes in. Neural networks are an interconnected collection of nodes called neurons or perceptrons. Every neuron takes one piece of the input pixel of the image, and applies a simple computation, called an activation function to generate a result. Each neuron has a numerical weight that affects its result. That result is fed to additional neural layers until at the end of the process the neural network generates a prediction for each pixel.
+<img src="/project/images/7_1.png" alt="1">
+This process if repeated for a large number of images, and the network learns the most approporiate weights for each neuron which provide accurate predictions &ndash; a process called backpropagation.</li>
+<li>However, regular neural networks for image classification have limitations. Traditional neural networks use a fully-connected architecture which makes it inefficient when processing image data</li>
+<li>In a convolutional neural network (CNN), the neurons in one layer don&rsquo;t connect to all the neurons in the next layer. CNN uses a three-dimensional structure where each set of neurons analyzes a specific region of the image, make the training process computationally achievable.
+<img src="/project/images/7_3.png" alt="2"></li>
+</ul>
+<h3 id="develop-neural-network-on-insect-images">Develop neural network on insect images</h3>
+<ul>
+<li>Here have an example of insect images with 3 classes: beetles, cockroach and dragonflies</li>
+</ul>
+<ol>
+<li>Data preprocessing</li>
+</ol>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">tensorflow</span> <span style="color:#204a87;font-weight:bold">as</span> <span style="color:#000">tf</span>
+<span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">tensorflow.keras</span> <span style="color:#204a87;font-weight:bold">as</span> <span style="color:#000">keras</span>
+<span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pandas</span> <span style="color:#204a87;font-weight:bold">as</span> <span style="color:#000">pd</span>
+<span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">numpy</span> <span style="color:#204a87;font-weight:bold">as</span> <span style="color:#000">np</span>
+<span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">glob</span><span style="color:#ce5c00;font-weight:bold">,</span><span style="color:#000">os</span>
+<span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">pathlib</span>
+<span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">PIL</span>
+<span style="color:#204a87;font-weight:bold">from</span> <span style="color:#000">PIL</span> <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">Image</span>
+<span style="color:#000">train_dir</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">pathlib</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">Path</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;/Users/hmy/Documents/2020_Fall/823/insects/train&#34;</span><span style="color:#000;font-weight:bold">)</span>
+<span style="color:#000">test_dir</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">pathlib</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">Path</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;/Users/hmy/Documents/2020_Fall/823/insects/test&#34;</span><span style="color:#000;font-weight:bold">)</span>
+<span style="color:#000">beetles</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87">list</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">train_dir</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">glob</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#39;beetles/*&#39;</span><span style="color:#000;font-weight:bold">))</span>
+<span style="color:#000">PIL</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">Image</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">open</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87">str</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">beetles</span><span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">]))</span>
+</code></pre></div><p>Here is one of images of beetles.
+<img src="/project/images/7_4.png" alt="4"></p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#000">batch_size</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">32</span>
+<span style="color:#000">img_height</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">180</span>
+<span style="color:#000">img_width</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">180</span>
+<span style="color:#000">train</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">tf</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">keras</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">preprocessing</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">image_dataset_from_directory</span><span style="color:#000;font-weight:bold">(</span>
+        <span style="color:#000">train_dir</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">batch_size</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#0000cf;font-weight:bold">32</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">image_size</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">img_height</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">img_width</span><span style="color:#000;font-weight:bold">))</span>
+<span style="color:#000">test</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">tf</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">keras</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">preprocessing</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">image_dataset_from_directory</span><span style="color:#000;font-weight:bold">(</span>
+       <span style="color:#000">test_dir</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">batch_size</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#0000cf;font-weight:bold">32</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">image_size</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">img_height</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">img_width</span><span style="color:#000;font-weight:bold">))</span>
+<span style="color:#000">class_names</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">train</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">class_names</span>
+
+<span style="color:#8f5902;font-style:italic"># standardize the data to make input values in [0,1] range</span>
+<span style="color:#000">normalization_layer</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">layers</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">experimental</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">preprocessing</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">Rescaling</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">1.</span><span style="color:#ce5c00;font-weight:bold">/</span><span style="color:#0000cf;font-weight:bold">255</span><span style="color:#000;font-weight:bold">)</span>
+<span style="color:#000">normalized_ds</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">train</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">map</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">lambda</span> <span style="color:#000">x</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">y</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">normalization_layer</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">x</span><span style="color:#000;font-weight:bold">),</span> <span style="color:#000">y</span><span style="color:#000;font-weight:bold">))</span>
+<span style="color:#000">image_batch</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">labels_batch</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#204a87">next</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87">iter</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">normalized_ds</span><span style="color:#000;font-weight:bold">))</span>
+</code></pre></div><ol>
+<li>Build the model
+The model consists of three convolution blocks with a max pool layer in each of them. There is a fully connected layer on top of that is activates by a relu activation function. However, this model has not been tuned for high accuracy.</li>
+</ol>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#000">num_classes</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">3</span>
+
+<span style="color:#000">model</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">Sequential</span><span style="color:#000;font-weight:bold">([</span>
+  <span style="color:#000">layers</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">experimental</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">preprocessing</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">Rescaling</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">1.</span><span style="color:#ce5c00;font-weight:bold">/</span><span style="color:#0000cf;font-weight:bold">255</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">input_shape</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">img_height</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">img_width</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">3</span><span style="color:#000;font-weight:bold">)),</span>
+  <span style="color:#000">layers</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">Conv2D</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">16</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">3</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">padding</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#39;same&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">activation</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#39;relu&#39;</span><span style="color:#000;font-weight:bold">),</span>
+  <span style="color:#000">layers</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">MaxPooling2D</span><span style="color:#000;font-weight:bold">(),</span>
+  <span style="color:#000">layers</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">Conv2D</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">32</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">3</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">padding</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#39;same&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">activation</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#39;relu&#39;</span><span style="color:#000;font-weight:bold">),</span>
+  <span style="color:#000">layers</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">MaxPooling2D</span><span style="color:#000;font-weight:bold">(),</span>
+  <span style="color:#000">layers</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">Conv2D</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">64</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">3</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">padding</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#39;same&#39;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">activation</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#39;relu&#39;</span><span style="color:#000;font-weight:bold">),</span>
+  <span style="color:#000">layers</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">MaxPooling2D</span><span style="color:#000;font-weight:bold">(),</span>
+  <span style="color:#000">layers</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">Flatten</span><span style="color:#000;font-weight:bold">(),</span>
+  <span style="color:#000">layers</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">Dense</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">128</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">activation</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#39;relu&#39;</span><span style="color:#000;font-weight:bold">),</span>
+  <span style="color:#000">layers</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">Dense</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">num_classes</span><span style="color:#000;font-weight:bold">)</span>
+<span style="color:#000;font-weight:bold">])</span>
+<span style="color:#000">model</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">compile</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">optimizer</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#39;adam&#39;</span><span style="color:#000;font-weight:bold">,</span>
+              <span style="color:#000">loss</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000">tf</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">keras</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">losses</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">SparseCategoricalCrossentropy</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">from_logits</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#3465a4">True</span><span style="color:#000;font-weight:bold">),</span>
+              <span style="color:#000">metrics</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#39;accuracy&#39;</span><span style="color:#000;font-weight:bold">])</span>
+<span style="color:#000">model</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">summary</span><span style="color:#000;font-weight:bold">()</span>
+</code></pre></div><p><img src="/project/images/7_5.png" alt="5"></p>
+<ol start="2">
+<li>Train the model</li>
+</ol>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#000">epochs</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#0000cf;font-weight:bold">10</span>
+<span style="color:#000">history</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">model</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">fit</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">train</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">epochs</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000">epochs</span><span style="color:#000;font-weight:bold">)</span>
+<span style="color:#000">predictions</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">model</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">predict</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">test</span><span style="color:#000;font-weight:bold">)</span>
+<span style="color:#000">score</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">tf</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">nn</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">softmax</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">predictions</span><span style="color:#000;font-weight:bold">[</span><span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">])</span>
+</code></pre></div><p><img src="/project/images/7_6.png" alt="6">
+Model achieves high accuracy on training set after 10 epochs</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-90-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-navy bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://zhhmyz.github.io/" >
+    &copy;  Mengyue Han 2020 
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+<a href="https://github.com/zhhmyz/zhhmyz.github.io" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

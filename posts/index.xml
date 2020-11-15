@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Mengyue Han</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://zhhmyz.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>HW7 : Deep learning model to classify insect images</title>
+      <link>https://zhhmyz.github.io/posts/assignment7/</link>
+      <pubDate>Sat, 14 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhhmyz.github.io/posts/assignment7/</guid>
+      <description>Source data and code  Insect images Access to the github Source code  How does neural network works  The human eye sees an image as a set of signials, interpreted by the brain visual cortex. In the process of neural network image classification, images are turned into a series of vectors that depict physical objects and features. Computer vision systems analyze these constructs by simplifying images and extracting the most important information, then organzing data through feature extraction and classification.</description>
+    </item>
     
     <item>
       <title>HW6 : Dashboard visualization of US PhDs</title>
