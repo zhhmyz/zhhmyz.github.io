@@ -39,7 +39,7 @@
 <meta itemprop="description" content="For Assignment 6">
 <meta itemprop="datePublished" content="2020-10-30T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2020-10-30T00:00:00+00:00" />
-<meta itemprop="wordCount" content="391">
+<meta itemprop="wordCount" content="400">
 
 
 
@@ -174,7 +174,7 @@
       
       
         <span class="f6 mv4 dib tracked"> - 2 minutes read</span>
-        <span class="f6 mv4 dib tracked"> - 391 words</span>
+        <span class="f6 mv4 dib tracked"> - 400 words</span>
       
     </header>
     <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr3-l w-two-90-l"><h3 id="source-data-and-code">Source data and code</h3>
@@ -281,13 +281,24 @@
 <p>Back to <code>Web</code>, reload the web url</p>
 </li>
 <li>
-<p>You can access to my <a href="http://zhmyz.pythonanywhere.com/">dashboard url</a> now</p>
-</li>
-<li>
-<p>The local image of this dashboard:
-<img src="/project/images/6_5.png" alt="1"></p>
+<p>Now the dashboard is deployed at <em>pythonanywhere</em> website</p>
 </li>
 </ul>
+<p>Here is the dashboard figure:
+
+  
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+
+
+
+
+<div id="/plotly/plotly_graph.json" class="plotly" style="height:500px"></div>
+<script>
+Plotly.d3.json("/plotly/plotly_graph.json", function(err, fig) {
+    Plotly.plot('\/plotly\/plotly_graph.json', fig.data, fig.layout, {responsive: true});
+});
+</script></p>
 <ul class="pa0">
   
 </ul>
