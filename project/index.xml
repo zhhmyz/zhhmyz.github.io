@@ -6,10 +6,19 @@
     <description>Recent content in Projects on Mengyue Han</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://zhhmyz.github.io/project/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Final project: Predicting discharge locations using MIMIC-III dataset</title>
+      <link>https://zhhmyz.github.io/project/final-project/</link>
+      <pubDate>Wed, 18 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://zhhmyz.github.io/project/final-project/</guid>
+      <description>Project description We used MIMIC-III dataset which is comprised of ~60,000 deidentified health-related data to classify and predict patients&amp;rsquo; discharge location. We are particularly interested in this primary outcome because discharge location is a good representation of healthcare utilizations. For this dataset, we mainly focused on discharge location SNF which represents for skilled nursing facility because patients discharged to a SNF will continue consume more hospital resources, while patients discharged to home will not.</description>
+    </item>
     
     <item>
       <title>HW7 : Deep learning model to classify insect images</title>
